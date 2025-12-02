@@ -210,7 +210,7 @@ def admin_menu(session, user):
             slot_id = input("PT Session Slot ID to assign: ").strip()
             room_id = input("Room ID to assign: ").strip()
             try:
-                result = assign_room_for_session(session, int(room_id), int(slot_id))
+                result = assign_room_for_session(session, int(slot_id), int(room_id))
                 display_result(result)
             except ValueError:
                 display_result({"status": "error", "message": "Room ID and Slot ID must be integers."})
