@@ -28,9 +28,6 @@ if __name__ == '__main__':
             db.close()
 
     db = get_db()
-    today = date.today()
-    tomorrow = today + timedelta(days=1)
-    day_after_tomorrow = today + timedelta(days=2) # Used for testing weekly availability
 
     print("\n---  Setting up initial data (Member, Trainer, Rooms, Admin) ---")
     db.add_all([

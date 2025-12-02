@@ -256,17 +256,16 @@ def main_menu():
         db = get_db_session()
         try:
             print("\n==============================================")
-            print("                MAIN MENU                     ") # Changed from LOGIN to MAIN
+            print("                MAIN MENU                     ")
             print("==============================================")
             print("1. Member/Trainer/Admin Login")
-            print("2. Register as a New Member") # New option for self-registration
+            print("2. Register as a New Member")
             print("3. Exit")
 
             main_choice = input("Enter choice (1-3): ").strip()
             clear_screen()
 
             if main_choice == '1':
-                # Existing login logic
                 print("--- Login ---")
                 name = input("Name: ").strip()
                 email = input("Email: ").strip()
@@ -294,7 +293,6 @@ def main_menu():
                     clear_screen()
 
             elif main_choice == '2':
-                # New member registration logic
                 print("--- Register as a New Member ---")
                 name = input("Name: ").strip()
                 email = input("Email: ").strip()
